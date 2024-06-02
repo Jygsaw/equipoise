@@ -10,43 +10,22 @@ https://equipoise.onrender.com
 (note: May be slow to spin up from hosting service hibernation)
 
 ## TODO
-- [ ] layouts
-  - [ ] full screen layout
-  - [ ] simple layout
-      - [ ] based on full screen layout
-      - [ ] includes copyright footer
-  - [ ] site layout
-      - [ ] based on simple layout
-      - [ ] includes header and side nav
 - [ ] app
-  - [ ] home
-    - [ ] uses simple layout
-    - [ ] write project description
-    - [ ] write tech stack used
-    - [ ] write interesting problems
-    - [ ] include resume link
   - [ ] main menu
-    - [ ] uses simple layout
-    - [ ] update layout
     - [ ] links
       - [ ] sim home
       - [ ] site home
       - [ ] stats home
   - [ ] site
-    - [ ] uses site layout
-    - [ ] create site util for generating titles
-    - [ ] create layout with copyright footer
     - [ ] account
       - [ ] settings
     - [ ] wiki
       - [ ] homepage
-        - [ ] update layout
         - [ ] embed about page
     - [ ] stats
       - [ ] dashboard
         - [ ] create layout with top nav and side bar
-  - [ ] sim
-    - [ ] uses full screen layout
+  - [ ] game
     - [ ] end
     - [ ] load
     - [ ] options
@@ -63,8 +42,14 @@ https://equipoise.onrender.com
     - [ ] start
 
 ## Backlog
+- [ ] fill out home page
+  - [ ] high-level architecture
+  - [ ] interesting challenges
+  - [ ] links to docs
+  - [ ] link to resume
 
 ## Plans
 
 ## Done
+- [X] create initial layout hierarchy and stubs
 - [X] remove default next app page and layout
