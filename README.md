@@ -10,21 +10,13 @@ https://equipoise.onrender.com
 (note: May be slow to spin up from hosting service hibernation)
 
 ## TODO
-- [ ] create initial page routes and stubs
-- [ ] game
-  - [ ] end = final results screen
-  - [ ] load = load previous configuration
-  - [ ] options = real-time game options
-  - [ ] play = run simulation
-    - [ ] integrate Canvas
-    - [ ] render world grid
-    - [ ] implement game loop
-    - [ ] add max turns endgame check
-    - [ ] spawn rocks
-    - [ ] spawn weeds
-    - [ ] extend endgame conditions
-  - [ ] save = save current configuration
-  - [ ] setup = configure game parameters
+- [ ] integrate Canvas
+- [ ] render world grid
+- [ ] spawn rocks
+- [ ] spawn weeds
+- [ ] implement game loop
+- [ ] add max turns endgame check
+- [ ] extend endgame conditions
 
 ## Backlog
 - [ ] fill out home page
@@ -36,5 +28,6 @@ https://equipoise.onrender.com
 ## Plans
 
 ## Done
+- [X] create initial page routes and stubs
 - [X] create initial layout hierarchy and stubs
 - [X] remove default next app page and layout
