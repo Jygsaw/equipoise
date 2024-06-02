@@ -1,4 +1,4 @@
-import { CopyrightFooter } from '@/app/site/_components/CopyrightFooter';
+import { CopyrightFooter } from '@/app/(site)/_components/CopyrightFooter';
 
 import type { PropsWithChildren } from 'react';
 

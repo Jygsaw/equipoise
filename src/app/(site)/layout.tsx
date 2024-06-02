@@ -1,4 +1,4 @@
-import { CopyrightLayout } from '@/app/site/_components/CopyrightLayout';
+import { CopyrightLayout } from '@/app/(site)/_components/CopyrightLayout';
 
 import type { PropsWithChildren } from 'react';
 

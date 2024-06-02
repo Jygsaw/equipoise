@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import { titleAppend } from '@/app/site/_lib/siteUtils';
-import { CopyrightLayout } from '@/app/site/_components/CopyrightLayout';
+import { titleAppend } from '@/app/(site)/_lib/siteUtils';
+import { CopyrightLayout } from '@/app/(site)/_components/CopyrightLayout';
 
 import type { Metadata } from 'next';
 

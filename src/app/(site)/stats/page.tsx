@@ -1,4 +1,4 @@
-import { titleAppend } from '@/app/site/_lib/siteUtils';
+import { titleAppend } from '@/app/(site)/_lib/siteUtils';
 
 import type { Metadata } from 'next';
 
