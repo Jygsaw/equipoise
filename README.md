@@ -10,8 +10,6 @@ https://equipoise.onrender.com
 (note: May be slow to spin up from hosting service hibernation)
 
 ## TODO
-- [ ] integrate Canvas
-- [ ] render world grid
 - [ ] spawn rocks
 - [ ] spawn weeds
 - [ ] implement game loop
@@ -28,6 +26,9 @@ https://equipoise.onrender.com
 ## Plans
 
 ## Done
+- [X] render game grid
+- [X] integrate Canvas
+- [X] refactor game pages as dynamic route
 - [X] create initial page routes and stubs
 - [X] create initial layout hierarchy and stubs
 - [X] remove default next app page and layout
