@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { titleAppend } from '@/app/site/_lib/siteUtils';
 import { CopyrightLayout } from '@/app/site/_components/CopyrightLayout';
 
@@ -12,6 +13,15 @@ const Page = () => {
     <CopyrightLayout>
       <main>
         <h1>Main Menu</h1>
+
+        <nav>
+          <ul>
+            <li><Link href="/site/wiki">Read</Link></li>
+            <li><Link href="/game">Play</Link></li>
+            <li><Link href="/site/stats">Analyze</Link></li>
+          </ul>
+        </nav>
+
       </main>
     </CopyrightLayout>
   );
