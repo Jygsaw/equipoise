@@ -5,10 +5,8 @@ import type { PropsWithChildren } from 'react';
 const RootLayout = ({ children }: Readonly<PropsWithChildren>) => {
   return (
     <html lang="en">
-      <body>
-        <div className="min-h-screen">
-          {children}
-        </div>
+      <body className="min-h-screen">
+        {children}
       </body>
     </html>
   );
