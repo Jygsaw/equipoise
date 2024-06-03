@@ -1,8 +1,7 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
-import { COLORS } from '@/app/game/_lib/constants';
-import { drawGrid } from '@/app/game/_lib/drawGrid';
+import { useState } from 'react';
+import { getRandInt } from '@/app/game/_lib/getRandNum';
 
 type GameProps = {
     view: string,
@@ -10,21 +9,39 @@ type GameProps = {
     height?: number,
 };
 
-const tmpViewToColor: Record<string, string> = {
-  play: 'blue',
-  setup: 'green',
-  splash: 'purple',
-  results: 'red',
-} as const;
-
-export const Game = ({ view, width = 500, height = 500 }: GameProps) => {
-  const canvasRef = useRef<HTMLCanvasElement>(null);
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const Game = (_: GameProps) => {
   const xMax = 10;
   const yMax = 10;
 
-  useEffect(() => {
-    drawGrid({ canvasRef, xMax, yMax, color: tmpViewToColor[view] ?? COLORS.orange });
-  }, [view]);
+  const initBoard = () => new Array(xMax + 1).fill('.').map(() => new Array(yMax + 1).fill('.'));
+  const [board, setBoard] = useState(initBoard);
 
-  return <canvas ref={canvasRef} width={width} height={height} />;
+  const spawnEntity = (type: any, coord?: [number, number]) => {
+    const [x, y] = coord ?? [getRandInt(board[0].length - 1), getRandInt(board.length - 1)];
+
+    if (board[y][x] === '.') {
+      setBoard((prev) => {
+        const newBoard = prev.map((row) => [...row]);
+        newBoard[y][x] = type;
+        return newBoard;
+      });
+    }
+  };
+
+  const onClickHandler = () => {
+    spawnEntity('G');
+  };
+
+  const renderBoard = () => {
+    return board.map(row => row.join('  ')).join('\n');
+  };
+
+  return (
+    <div>
+      <pre>{renderBoard()}</pre>
+      <br/>
+      <button onClick={onClickHandler}>Spawn Grass</button>
+    </div>
+  );
 };
