@@ -10,6 +10,7 @@ https://equipoise.onrender.com
 (note: May be slow to spin up from hosting service hibernation)
 
 ## TODO
+- [ ] spawn grass
 - [ ] spawn rocks
 - [ ] spawn weeds
 - [ ] implement game loop
@@ -22,12 +23,12 @@ https://equipoise.onrender.com
   - [ ] interesting challenges
   - [ ] links to docs
   - [ ] link to resume
+- [] integrate Canvas
 
 ## Plans
 
 ## Done
 - [X] render game grid
-- [X] integrate Canvas
 - [X] refactor game pages as dynamic route
 - [X] create initial page routes and stubs
 - [X] create initial layout hierarchy and stubs
